@@ -1,0 +1,30 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:caui="sap.ca.ui" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	controllerName="ogrencikayit.anasayfa" xmlns:html="http://www.w3.org/1999/xhtml">
+	<html:style>
+		.myButton .sapMBtnInner{
+		border-radius: 30px;
+		}
+	</html:style>
+	<Page title="Öğrenci Kayıt">
+		<content>
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center"
+				alignContent="Center">
+				<items>
+					<Label text="İşlem Seçiniz..." />
+					<Button width="20rem" text="Tüm Öğrencileri Görüntüleme" type="Emphasized" press="tGörüntüle"
+						class="myButton" icon="sap-icon://show" />
+					<Button width="20rem" text="Belirdi Id'li Öğrenciyi Görüntüleme" type="Emphasized"
+						 press="idGörüntüle" class="myButton" icon="sap-icon://show" />
+					<Button width="20rem" text="Öğrenci Ekleme" type="Accept" press="add"
+						class="myButton" icon="sap-icon://add" />
+					<Button width="20rem" text="Öğrenci Bilgileri Güncelleme" type="Ghost" press="update"
+						class="myButton" icon="sap-icon://upload" />
+					<Button width="20rem" text="Öğrenci Silme" type="Reject" press="deletee"
+						class="myButton" icon="sap-icon://delete"/>
+				</items>
+			</VBox>
+		</content>
+	</Page>
+</core:View>
+

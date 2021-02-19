@@ -1,0 +1,22 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:caui="sap.ca.ui" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	controllerName="ogrencikayit.sayfa2" xmlns:html="http://www.w3.org/1999/xhtml">
+	<html:style>
+		.myButton .sapMBtnInner{
+		border-radius: 30px;
+		}
+	</html:style>
+	<Page title="Öğrenci Görüntüleme">
+		<content>
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center"
+				alignContent="Center">
+				<items>
+					<Label text="Görmek İstediğiniz Öğrencinin Id'sini Giriniz..." />
+					<Input type="Number" placeholder="ID" name="id" width="12rem" />
+					<Button width="12rem" text="Getir" type="Emphasized" press="clickButton"
+						class="myButton" icon="sap-icon://show"/>
+				</items>
+			</VBox>
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,22 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns:caui="sap.ca.ui" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	controllerName="ogrencikayit.sayfa5" xmlns:html="http://www.w3.org/1999/xhtml">
+	<html:style>
+		.myRedButton .sapMBtnInner{
+		border-radius: 30px;
+		}
+	</html:style>
+	<Page title="Öğrenci Silme">
+		<content>
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center"
+				alignContent="Center">
+				<items>
+					<Label text="Silmek İstediğiniz Öğrencinin Id'sini Giriniz..." />
+					<Input type="Number" placeholder="ID" name="id" width="12rem" />
+					<Button width="12rem" text="Sil" type="Reject" press="clickButton"
+						class="myRedButton" icon="sap-icon://delete"/>
+				</items>
+			</VBox>
+		</content>
+	</Page>
+</core:View>

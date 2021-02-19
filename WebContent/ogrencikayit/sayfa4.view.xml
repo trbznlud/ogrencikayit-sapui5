@@ -1,0 +1,26 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="ogrencikayit.sayfa4"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<html:style>
+		.myButton .sapMBtnInner{
+		border-radius: 30px;
+		}
+	</html:style>
+	<Page title="Öğrenci Güncelleme">
+		<content>
+			<VBox fitContainer="true" justifyContent="Center" alignItems="Center"
+				alignContent="Center">
+				<items>
+					<Label text="Güncellemek İstediğiniz Öğrencinin Bilgilerini Giriniz..." />
+					<Input type="Number" placeholder="ID" name="id" width="12rem" />
+					<Input placeholder="Öğrenci Adı" name="oAdi" width="12rem" />
+					<Input placeholder="Öğrenci SoyAdı" name="oSoy" width="12rem" />
+					<Input type="Number" placeholder="Öğrenci Sınıfı" name="oSinif" width="12rem"/>
+					<Button width="12rem" text="Güncelle" type="Emphasized" press="clickButton"
+						class="myButton" icon="sap-icon://upload" />
+				</items>
+			</VBox>
+		</content>
+	</Page>
+</core:View>
+
